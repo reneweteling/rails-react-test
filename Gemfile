@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'react-rails'
 gem 'slim-rails'
 gem 'jquery-rails'
+gem 'sprockets-coffee-react'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-sass'  

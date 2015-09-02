@@ -1,16 +1,2 @@
-/ Isomorpic react WRONG!!
-div.alert.alert-danger role="alert" So this is the wrong way to use isomorpic React ( if JS is on, youll see 2 blocks)
-= react_component('Test', {caller: 'Server'}, {prerender: true})
-#iso
-
-hr
-
-/ Isomorpic react Correct
-div.alert.alert-success role="alert" But the way to actually do this propperly is like this
-#propperiso
-  = react_component('Test', {caller: 'Server'}, {prerender: true})
-
-hr
-
 / here the commentbox will be mounted
 #container 

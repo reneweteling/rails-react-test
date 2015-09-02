@@ -2,10 +2,24 @@ doctype html
 html
   head
     title ReactTest
-
-  = stylesheet_link_tag    'application', media: 'all'
-  = javascript_include_tag 'application'
-  = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
 body
   .container
+    nav.navbar.navbar-default
+      .container-fluid
+        /! Brand and toggle get grouped for better mobile display
+        .navbar-header
+          a.navbar-brand href="#"  React test
+        /! Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li class="#{action_name == 'index' ? 'active' : ''}"
+              = link_to 'Comment test', root_path
+            li class="#{action_name == 'wrong' ? 'active' : ''}"
+              = link_to 'Wrong', wrong_path
+            li class="#{action_name == 'correct' ? 'active' : ''}"
+              = link_to 'Correct', correct_path
+
     = yield

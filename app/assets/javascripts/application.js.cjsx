@@ -19,7 +19,7 @@ $ ->
   Comments.fetch()
   
   #### React shizzle
-  React.render <Page collection={Comments} />, document.getElementById('container')
+  React.render <Page collection={Comments} />, document.getElementById('container') if document.getElementById('container')?
 
-  React.render <Test caller={'Javascript'} />, document.getElementById('iso')
-  React.render <Test caller={'Javascript'} />, document.getElementById('propperiso')
+  React.render <Test caller={'Javascript'} />, document.getElementById('iso') if document.getElementById('iso')?
+  React.render <Test caller={'Javascript'} />, document.getElementById('propperiso') if document.getElementById('propperiso')?

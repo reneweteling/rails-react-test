@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'correct' => 'home#correct', as: :correct
   get 'wrong' => 'home#wrong', as: :wrong
+  get 'riot' => 'home#riot', as: :riot
 end

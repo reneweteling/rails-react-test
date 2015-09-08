@@ -21,5 +21,8 @@ body
               = link_to 'Wrong', wrong_path
             li class="#{action_name == 'correct' ? 'active' : ''}"
               = link_to 'Correct', correct_path
+            li class="#{action_name == 'riot' ? 'active' : ''}"
+              = link_to 'Riot', riot_path
+
 
     = yield
